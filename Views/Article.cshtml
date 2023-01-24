@@ -3,18 +3,25 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
     Layout = "InnerPageLayout.cshtml";
-    var theRoot = (HomePage)Model.Root();
 
     var title = Model.Name;
     var auth_name = Model.AuthorName;
     var auth_pos = Model.AuthorPosition;
     var short_desc = Model.ShortDesc;
+
     var related_cats = Model.RelatedCategories?.ToList();
     var lobby_cat = related_cats?.Where(rc => rc.Parent?.GetType().Name == "Categories").FirstOrDefault()?.Name;
+
     var bgSideImg = "background-image:url('" + Model.SideImg?.Url() + "');";
 
     var topParagraphs = Model.TopContentParagraphs;
     var bottomParagraphs = Model.BottomContentParagraphs;
+
+    var video_coverImg = "background-image:url('" + Model.VideoCoverImg?.Url() + "');";
+    var video_auth = Model.VideoAuthor;
+    var video_title = Model.VideoTitle;
+    var video_idKey = Model.VideoYouTubeID;
+
 }
 
 <a href="javascript:;" id="maincontent" tabindex="-1" class="skip_content_link"></a>
@@ -49,14 +56,14 @@
                 }
                 <div class="video_box mix_video">
                     <a href="javascript:;" class="inner play_video" aria-label="נגן סרטון">
-                        <div class="bg cover" style="background-image: url('media/images/pictures/25.jpg');"></div>
+                        <div class="bg cover" style=@video_coverImg></div>
                         <div class="play_btn"></div>
                         <div class="bottom">
-                            <div class="name font_xl">ד״ר רוגובסקי רותם</div>
-                            <h4 class="title-2">מידע גם על שאר הבדיקות בהריון</h4>
+                            <div class="name font_xl">@video_auth</div>
+                            <h4 class="title-2">@video_title</h4>
                         </div>
                     </a>
-                    <div class="iframe_cont" data-youtube-id="Bey4XXJAqS8"></div>
+                    <div class="iframe_cont" data-youtube-id="@video_idKey"></div>
                 </div>
                 @foreach (var bp in bottomParagraphs)
                 {

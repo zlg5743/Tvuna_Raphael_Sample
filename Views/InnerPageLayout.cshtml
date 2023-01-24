@@ -1,7 +1,12 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
-	Layout = "Layout.cshtml";
+    Layout = "Layout.cshtml";
+
+
+    var theRoot = (HomePage)Model.Root();
+    var pageDefs = theRoot?.Children<SiteSettings>()?.FirstOrDefault()?.Children<InnerPageDefs>()?.FirstOrDefault();
+    var carTitle = pageDefs.RelatedPostsCarousel_Title;
 }
 
 <div class="medicalcenter_page template_container container_padding" id="medicalcenter_page" data-templatename="medical_center">
@@ -17,7 +22,7 @@
 	<section class="posts_section experts_section" id="posts_section">
 		<div class="innerpage">
 			<div class="row">
-				<h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>אולי יעניין אותך גם</h2>
+				<h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>@carTitle</h2>
                 <div class="carousel sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
                     <div class="item carousel-cell">
                         <a href="#" class="inner" aria-label="עבור לרופא">

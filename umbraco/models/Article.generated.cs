@@ -82,6 +82,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent> RelatedCategories => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent>>(_publishedValueFallback, "relatedCategories");
 
 		///<summary>
+		/// RelevantArticles
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("relevantArticles")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel RelevantArticles => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "relevantArticles");
+
+		///<summary>
 		/// Short_Desc
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
@@ -104,5 +112,37 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("topContentParagraphs")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel TopContentParagraphs => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "topContentParagraphs");
+
+		///<summary>
+		/// VideoAuthor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoAuthor")]
+		public virtual string VideoAuthor => this.Value<string>(_publishedValueFallback, "videoAuthor");
+
+		///<summary>
+		/// VideoCoverImg
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoCoverImg")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops VideoCoverImg => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "videoCoverImg");
+
+		///<summary>
+		/// VideoTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoTitle")]
+		public virtual string VideoTitle => this.Value<string>(_publishedValueFallback, "videoTitle");
+
+		///<summary>
+		/// VideoYouTubeID
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.0.1+fd0c4fd")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoYouTubeID")]
+		public virtual string VideoYouTubeID => this.Value<string>(_publishedValueFallback, "videoYouTubeID");
 	}
 }
