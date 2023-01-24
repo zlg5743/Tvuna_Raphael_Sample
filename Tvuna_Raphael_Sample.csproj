@@ -1,0 +1,234 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\media\css\global.css" />
+    <Content Include="wwwroot\media\css\global_en.css" />
+    <Content Include="wwwroot\media\css\style.css" />
+    <Content Include="wwwroot\media\css\style_en.css" />
+    <Content Include="wwwroot\media\favicons\android-chrome-192x192.png" />
+    <Content Include="wwwroot\media\favicons\android-chrome-256x256.png" />
+    <Content Include="wwwroot\media\favicons\apple-touch-icon.png" />
+    <Content Include="wwwroot\media\favicons\browserconfig.xml" />
+    <Content Include="wwwroot\media\favicons\favicon-16x16.png" />
+    <Content Include="wwwroot\media\favicons\favicon-32x32.png" />
+    <Content Include="wwwroot\media\favicons\favicon.ico" />
+    <Content Include="wwwroot\media\favicons\mstile-150x150.png" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-300.eot" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-300.ttf" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-300.woff" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-600.eot" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-600.ttf" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-600.woff" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-700.eot" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-700.ttf" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-700.woff" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-regular.eot" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-regular.ttf" />
+    <Content Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-regular.woff" />
+    <Content Include="wwwroot\media\fonts\FedraSansMedium.eot" />
+    <Content Include="wwwroot\media\fonts\FedraSansMedium.woff" />
+    <Content Include="wwwroot\media\fonts\refaelicons.eot" />
+    <Content Include="wwwroot\media\fonts\refaelicons.ttf" />
+    <Content Include="wwwroot\media\fonts\refaelicons.woff" />
+    <Content Include="wwwroot\media\fonts\roboto-slab-v11-cyrillic-ext_latin_cyrillic-600.eot" />
+    <Content Include="wwwroot\media\fonts\roboto-slab-v11-cyrillic-ext_latin_cyrillic-600.ttf" />
+    <Content Include="wwwroot\media\fonts\roboto-slab-v11-cyrillic-ext_latin_cyrillic-600.woff" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-300.eot" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-300.ttf" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-300.woff" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-600.eot" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-600.ttf" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-600.woff" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-700.eot" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-700.ttf" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-700.woff" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-regular.eot" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-regular.ttf" />
+    <Content Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-regular.woff" />
+    <Content Include="wwwroot\media\fonts\style.css" />
+    <Content Include="wwwroot\media\images\iconh_1.png" />
+    <Content Include="wwwroot\media\images\iconh_2.png" />
+    <Content Include="wwwroot\media\images\iconh_3.png" />
+    <Content Include="wwwroot\media\images\iconh_4.png" />
+    <Content Include="wwwroot\media\images\iconh_5.png" />
+    <Content Include="wwwroot\media\images\iconi_1.png" />
+    <Content Include="wwwroot\media\images\iconi_10.png" />
+    <Content Include="wwwroot\media\images\iconi_2.png" />
+    <Content Include="wwwroot\media\images\iconi_3.png" />
+    <Content Include="wwwroot\media\images\iconi_4.png" />
+    <Content Include="wwwroot\media\images\iconi_5.png" />
+    <Content Include="wwwroot\media\images\iconi_6.png" />
+    <Content Include="wwwroot\media\images\iconi_7.png" />
+    <Content Include="wwwroot\media\images\iconi_8.png" />
+    <Content Include="wwwroot\media\images\iconi_9.png" />
+    <Content Include="wwwroot\media\images\iconse_1.png" />
+    <Content Include="wwwroot\media\images\iconse_2.png" />
+    <Content Include="wwwroot\media\images\iconse_3.png" />
+    <Content Include="wwwroot\media\images\iconse_4.png" />
+    <Content Include="wwwroot\media\images\iconse_5.png" />
+    <Content Include="wwwroot\media\images\iconse_6.png" />
+    <Content Include="wwwroot\media\images\iconse_7.png" />
+    <Content Include="wwwroot\media\images\iconse_8.png" />
+    <Content Include="wwwroot\media\images\icon_close.png" />
+    <Content Include="wwwroot\media\images\icon_doc.png" />
+    <Content Include="wwwroot\media\images\icon_pdf.png" />
+    <Content Include="wwwroot\media\images\logo.png" />
+    <Content Include="wwwroot\media\images\logo_dark.png" />
+    <Content Include="wwwroot\media\images\logo_dark_mobile.png" />
+    <Content Include="wwwroot\media\images\logo_mobile.png" />
+    <Content Include="wwwroot\media\images\logo_tvuna.png" />
+    <Content Include="wwwroot\media\images\mixelwcag.png" />
+    <Content Include="wwwroot\media\images\pictures\1.jpg" />
+    <Content Include="wwwroot\media\images\pictures\10.jpg" />
+    <Content Include="wwwroot\media\images\pictures\11.jpg" />
+    <Content Include="wwwroot\media\images\pictures\12.jpg" />
+    <Content Include="wwwroot\media\images\pictures\13.jpg" />
+    <Content Include="wwwroot\media\images\pictures\14.jpg" />
+    <Content Include="wwwroot\media\images\pictures\15.jpg" />
+    <Content Include="wwwroot\media\images\pictures\16.jpg" />
+    <Content Include="wwwroot\media\images\pictures\17.jpg" />
+    <Content Include="wwwroot\media\images\pictures\18.jpg" />
+    <Content Include="wwwroot\media\images\pictures\19.jpg" />
+    <Content Include="wwwroot\media\images\pictures\2.jpg" />
+    <Content Include="wwwroot\media\images\pictures\20.jpg" />
+    <Content Include="wwwroot\media\images\pictures\21.jpg" />
+    <Content Include="wwwroot\media\images\pictures\22.jpg" />
+    <Content Include="wwwroot\media\images\pictures\23.jpg" />
+    <Content Include="wwwroot\media\images\pictures\24.jpg" />
+    <Content Include="wwwroot\media\images\pictures\25.jpg" />
+    <Content Include="wwwroot\media\images\pictures\26.jpg" />
+    <Content Include="wwwroot\media\images\pictures\27.jpg" />
+    <Content Include="wwwroot\media\images\pictures\28.jpg" />
+    <Content Include="wwwroot\media\images\pictures\29.jpg" />
+    <Content Include="wwwroot\media\images\pictures\3.jpg" />
+    <Content Include="wwwroot\media\images\pictures\30.jpg" />
+    <Content Include="wwwroot\media\images\pictures\31.jpg" />
+    <Content Include="wwwroot\media\images\pictures\32.jpg" />
+    <Content Include="wwwroot\media\images\pictures\33.jpg" />
+    <Content Include="wwwroot\media\images\pictures\34.jpg" />
+    <Content Include="wwwroot\media\images\pictures\35.jpg" />
+    <Content Include="wwwroot\media\images\pictures\36.jpg" />
+    <Content Include="wwwroot\media\images\pictures\37.jpg" />
+    <Content Include="wwwroot\media\images\pictures\38.jpg" />
+    <Content Include="wwwroot\media\images\pictures\39.jpg" />
+    <Content Include="wwwroot\media\images\pictures\4.jpg" />
+    <Content Include="wwwroot\media\images\pictures\40.jpg" />
+    <Content Include="wwwroot\media\images\pictures\41.jpg" />
+    <Content Include="wwwroot\media\images\pictures\42.jpg" />
+    <Content Include="wwwroot\media\images\pictures\43.jpg" />
+    <Content Include="wwwroot\media\images\pictures\44.jpg" />
+    <Content Include="wwwroot\media\images\pictures\45.jpg" />
+    <Content Include="wwwroot\media\images\pictures\46.jpg" />
+    <Content Include="wwwroot\media\images\pictures\47.jpg" />
+    <Content Include="wwwroot\media\images\pictures\48.jpg" />
+    <Content Include="wwwroot\media\images\pictures\49.jpg" />
+    <Content Include="wwwroot\media\images\pictures\5.jpg" />
+    <Content Include="wwwroot\media\images\pictures\50.jpg" />
+    <Content Include="wwwroot\media\images\pictures\51.jpg" />
+    <Content Include="wwwroot\media\images\pictures\52.jpg" />
+    <Content Include="wwwroot\media\images\pictures\53.jpg" />
+    <Content Include="wwwroot\media\images\pictures\54.jpg" />
+    <Content Include="wwwroot\media\images\pictures\55.jpg" />
+    <Content Include="wwwroot\media\images\pictures\56.jpg" />
+    <Content Include="wwwroot\media\images\pictures\57.jpg" />
+    <Content Include="wwwroot\media\images\pictures\58.jpg" />
+    <Content Include="wwwroot\media\images\pictures\59.jpg" />
+    <Content Include="wwwroot\media\images\pictures\6.jpg" />
+    <Content Include="wwwroot\media\images\pictures\60.jpg" />
+    <Content Include="wwwroot\media\images\pictures\61.jpg" />
+    <Content Include="wwwroot\media\images\pictures\62.jpg" />
+    <Content Include="wwwroot\media\images\pictures\63.jpg" />
+    <Content Include="wwwroot\media\images\pictures\64.jpg" />
+    <Content Include="wwwroot\media\images\pictures\65.jpg" />
+    <Content Include="wwwroot\media\images\pictures\66.jpg" />
+    <Content Include="wwwroot\media\images\pictures\67.jpg" />
+    <Content Include="wwwroot\media\images\pictures\68.jpg" />
+    <Content Include="wwwroot\media\images\pictures\69.jpg" />
+    <Content Include="wwwroot\media\images\pictures\7.jpg" />
+    <Content Include="wwwroot\media\images\pictures\70.jpg" />
+    <Content Include="wwwroot\media\images\pictures\71.jpg" />
+    <Content Include="wwwroot\media\images\pictures\72.jpg" />
+    <Content Include="wwwroot\media\images\pictures\73.jpg" />
+    <Content Include="wwwroot\media\images\pictures\74.jpg" />
+    <Content Include="wwwroot\media\images\pictures\75.jpg" />
+    <Content Include="wwwroot\media\images\pictures\76.jpg" />
+    <Content Include="wwwroot\media\images\pictures\77.jpg" />
+    <Content Include="wwwroot\media\images\pictures\78.jpg" />
+    <Content Include="wwwroot\media\images\pictures\79.jpg" />
+    <Content Include="wwwroot\media\images\pictures\8.jpg" />
+    <Content Include="wwwroot\media\images\pictures\80.jpg" />
+    <Content Include="wwwroot\media\images\pictures\81.jpg" />
+    <Content Include="wwwroot\media\images\pictures\82.jpg" />
+    <Content Include="wwwroot\media\images\pictures\83.jpg" />
+    <Content Include="wwwroot\media\images\pictures\84.jpg" />
+    <Content Include="wwwroot\media\images\pictures\85.jpg" />
+    <Content Include="wwwroot\media\images\pictures\9.jpg" />
+    <Content Include="wwwroot\media\json\doctors.json" />
+    <Content Include="wwwroot\media\json\services.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms" Version="10.0.1" />
+  </ItemGroup>
+
+  <!-- Force Windows to use ICU. Otherwise Windows 10 2019H1+ will do it, but older Windows 10 and most, if not all, Windows Server editions will run NLS -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
+    <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
+  </ItemGroup>
+
+
+  <PropertyGroup>
+    <CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\media\favicons\safari-pinned-tab.svg" />
+    <None Include="wwwroot\media\favicons\site.webmanifest" />
+    <None Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-300.svg" />
+    <None Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-300.woff2" />
+    <None Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-600.svg" />
+    <None Include="wwwroot\media\fonts\assistant-v4-hebrew_latin-600.woff2" />
+    <None Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-700.svg" />
+    <None Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-700.woff2" />
+    <None Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-regular.svg" />
+    <None Include="wwwroot\media\fonts\assistant-v4-latin_hebrew-regular.woff2" />
+    <None Include="wwwroot\media\fonts\FedraSansMedium.svg" />
+    <None Include="wwwroot\media\fonts\FedraSansMedium.woff2" />
+    <None Include="wwwroot\media\fonts\refaelicons.svg" />
+    <None Include="wwwroot\media\fonts\roboto-slab-v11-cyrillic-ext_latin_cyrillic-600.svg" />
+    <None Include="wwwroot\media\fonts\roboto-slab-v11-cyrillic-ext_latin_cyrillic-600.woff2" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-300.svg" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-300.woff2" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-600.svg" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-600.woff2" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-700.svg" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-700.woff2" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-regular.svg" />
+    <None Include="wwwroot\media\fonts\source-sans-pro-v13-cyrillic-ext_latin_cyrillic-regular.woff2" />
+    <None Include="wwwroot\media\js\global.js" />
+    <None Include="wwwroot\media\js\plugins\flickity.pkgd.min.js" />
+    <None Include="wwwroot\media\js\plugins\gsap.min.js.map" />
+    <None Include="wwwroot\media\js\plugins\isotope.min.js" />
+    <None Include="wwwroot\media\js\plugins\jquery.mask.min.js" />
+    <None Include="wwwroot\media\js\plugins\jquery.scrollbar.min.js" />
+    <None Include="wwwroot\media\js\plugins\mixel.plugins.js" />
+    <None Include="wwwroot\media\js\plugins\plugins.min.js" />
+    <None Include="wwwroot\media\js\plugins\ScrollToPlugin.min.js.map" />
+    <None Include="wwwroot\media\js\plugins\SplitText.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\media\css\plugins\" />
+  </ItemGroup>
+
+  <!-- Keep this as false if ModelsBuilder mode is InMemoryAuto -->
+  <PropertyGroup>
+    <RazorCompileOnBuild>false</RazorCompileOnBuild>
+    <RazorCompileOnPublish>false</RazorCompileOnPublish>
+  </PropertyGroup>
+</Project>

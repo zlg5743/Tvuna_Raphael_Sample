@@ -1,0 +1,334 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+    
+}
+<html lang="he" dir="rtl">
+<head>
+
+    <title>רפאל</title>
+    
+    <!-- Content type and encoding -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" /> 
+            
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" type="text/css" href="~/media/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="~/media/css/style.css" />
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/media/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/media/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/media/favicons/favicon-16x16.png">
+    <link rel="manifest" href="~/media/favicons/site.webmanifest">
+    <link rel="mask-icon" href="~/media/favicons/safari-pinned-tab.svg" color="#003a70">
+    <link rel="shortcut icon" href="~/media/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="רפאל">
+    <meta name="application-name" content="רפאל">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="~/media/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body class="loaded">
+
+    <!-- Skip content -->
+    <div class="skiptocontent" id="skiptocontent">
+        <a class="access open_nav" tabindex="1" accesskey="n" href="javascript:;">דלג לתפריט הראשי (מקש קיצור n)</a>
+        <a class="access" tabindex="2" accesskey="s" href="#maincontent">דלג לתוכן הדף (מקש קיצור s)</a>
+        <a class="access" tabindex="3" accesskey="2" href="#mainfooter">דלג לתחתית הדף (מקש קיצור 2)</a>
+    </div>
+
+    <!-- Header -->
+    <header class="header header-light" id="header">
+        <div class="mask"></div>
+        <div class="in">
+            <div class="innerpage">
+                <div class="row">
+
+                    <!-- Logo -->
+                    <a href="#" title="רפאל - מרכזים רפואיים" class="logo"></a>
+
+                    <!-- Nav -->
+                    <nav class="nav">
+                        <ul class="menu clear">
+                            <li class="has-subnav li-parent">
+                                <a href="javascript:;">אודות<span class="border"></span></a>
+                                <div class="subnav">
+                                    <div class="subnav_in">
+                                        <div class="subnav_er">
+                                            <ul>
+                                                <li><a href="#">מידע עלינו</a></li>
+                                                <li><a href="#">דבר המנכ"ל</a></li>
+                                                <li><a href="#">צוות הרופאים</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-parent"><a href="#">מערכים ושירותים<span class="border"></span></a></li>
+                            <li class="has-subnav li-parent">
+                                <a href="javascript:;">ניתוחים<span class="border"></span></a>
+                                <div class="subnav">
+                                    <div class="subnav_in">
+                                        <div class="subnav_er">
+                                            <ul>
+                                                <li><a href="#">חיפוש ניתוח</a></li>
+                                                <li><a href="#">סוגי ניתוחים</a></li>
+                                                <li><a href="#">צוות הרופאים</a></li>
+                                                <li><a href="#">סוגי טיפולים</a></li>
+                                                <li><a href="#">מידע למטופל</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li-parent"><a href="#">רופאים מומחים<span class="border"></span></a></li>
+                            <li class="li-parent"><a href="#">מידע למטופל<span class="border"></span></a></li>
+                            <li class="has-subnav li-parent">
+                                <a href="javascript:;">מחקר ואקדמיה<span class="border"></span></a>
+                                <div class="subnav">
+                                    <div class="subnav_in">
+                                        <div class="subnav_er">
+                                            <ul>
+                                                <li><a href="#">חדרי אישפוז</a></li>
+                                                <li><a href="#">ייעוץ והכוונה</a></li>
+                                                <li><a href="#">מחקרים נוספים</a></li>
+                                                <li><a href="#">אודות האקדמיה</a></li>
+                                                <li><a href="#">שאלות נפוצות</a></li>
+                                                <li><a href="#">טפסים</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="small-padding small-margin li-parent"><a href="#" class="btn"><span>יצירת קשר</span></a></li>
+                            <li class="small-padding li-search li-parent">
+                                <a href="javascript:;" aria-label="חיפוש" class="toggle-search"><span class="relative"><span class="icon icon-search"></span><span class="border"></span></span></a>
+                                <div class="subnav subnav_search">
+                                    <div class="subnav_in">
+                                        <div class="subnav_er">
+                                            <form class="search-box font_m">
+                                                <span class="icon icon-search"></span>
+                                                <input type="text" placeholder="חיפוש כללי" aria-label="הקלד מילת חיפוש" />
+                                                <button type="submit" class="submit btn_arrow" disabled><span class="icon icon-arrow_left"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="has-subnav small-padding li-parent">
+                                <a href="javascript:;" aria-label="בחירת שפה"><span class="icon icon-lang"></span><span class="mobile_label">שפה / Language</span><span class="border"></span></a>
+                                <div class="subnav">
+                                    <div class="subnav_in">
+                                        <div class="subnav_er">
+                                            <ul>
+                                                <li><a href="#">עברית</a></li>
+                                                <li><a href="#">English</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Mobile -->
+                    <a href="javascript:;" class="toggleMenu" id="toggleMenu" aria-label="פתח תפריט"><span class="stroke"><span class="middle"></span></span></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile nav -->
+    <nav id="nav_mobile" class="nav_mobile">
+        <a href="javacsript:;" class="btn_close"><span class="icon icon-close"></span></a>
+        <div class="inner">
+            <div class="btn_cont"><a href="#" class="btn btn_contact"><span>יצירת קשר</span></a></div>
+            <div class="search_cont"></div>
+        </div>
+    </nav>
+
+    <!-- Sticky elements -->
+    <div class="sticky_elem" id="sticky_elem">
+        <ul class="share_sticky">
+            <li><a href="#" aria-label="WhatsApp"><span class="icon icon-whatsapp"></span></a></li>
+            <li><a href="#" aria-label="Facebook"><span class="icon icon-facebook_square"></span></a></li>
+            <li class="li-print"><a href="window.print();" aria-label="הדפס מאמר"><span class="icon icon-print"></span></a></li>
+        </ul>
+    </div>
+
+    <div class="container-scroll" id="container-scroll">
+        <main class="container" id="container" role="main">
+
+            <div id="page-top"></div>
+
+@RenderBody()
+
+            <a href="javascript:;" id="mainfooter" tabindex="-1" class="skip_content_link"></a>
+
+            <!-- Footer -->
+            <section class="footer" id="footer">
+                <a href="#page-top" class="go_up btn_arrow white" aria-label="חזור לראש העמוד"><span class="icon icon-arrow_up"></span></a>
+                <div class="top">
+                    <div class="innerpage">
+                        <div class="row">
+                            <form class="newsletter_box search-box font_m" id="newsletter_box">
+                                <div class="step_one" data-placeholder="הכניסו את כתובת המייל שלכם וקבלו עדכונים חמים מהבלוג">
+                                    <input type="text" placeholder="הכניסו את כתובת המייל שלכם וקבלו עדכונים חמים מהבלוג" aria-label="הכניסו את כתובת המייל שלכם וקבלו עדכונים חמים מהבלוג" class="place-black" />
+                                    <button type="submit" class="submit btn_arrow" disabled><span class="icon icon-arrow_left"></span></button>
+                                </div>
+                                <div class="step_two">
+                                    תודה שנרשמתם, בקרוב תקבלו עדכונים חמים מהבלוג ישירות למייל שלכם
+                                </div>
+                            </form>
+
+                            <ul class="breadcrumbs font_s clear">
+                                <li><a href="#" aria-label="חזור לדף הבית"><span class="icon icon-home"></span></a></li>
+                                <li><a href="#">אודות</a></li>
+                                <li>מי אנחנו</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="innerpage">
+                    <div class="row">
+                        <div class="middle font_xs clear">
+                            <div class="col">
+                                <ul class="info_box font_s">
+                                    <li>
+                                        <span class="icon icon-phone"></span>
+                                        <div class="label">טלפון</div>
+                                        <div class="desc font_r">03-5008888</div>
+                                    </li>
+                                    <li>
+                                        <span class="icon icon-fax"></span>
+                                        <div class="label">פקס</div>
+                                        <div class="desc font_r">03-6448573</div>
+                                    </li>
+                                    <li>
+                                        <span class="icon icon-email"></span>
+                                        <div class="label">כתבו לנו</div>
+                                        <div class="desc font_r"><a href="mailto:contactus@meravmc.co.il" aria-label="שלח מייל">contactus@meravmc.co.il</a></div>
+                                    </li>
+                                    <li>
+                                        <span class="icon icon-pin"></span>
+                                        <div class="label">בקרו אותנו</div>
+                                        <div class="desc font_r">שדרות העצמאות 67, בת ים</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col col_collapse">
+                                <h5 class="col_title font_r">אודות</h5>
+                                <div class="sublinks">
+                                    <ul class="links">
+                                        <li><a href="#">אודות המרכז הרפואי</a></li>
+                                        <li><a href="#">דבר המנכ"ל</a></li>
+                                        <li><a href="#">הוועד המנהל</a></li>
+                                        <li><a href="#" class="highlight"><span>קריירה</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col_collapse">
+                                <h5 class="col_title font_r">רופאים מומחים</h5>
+                                <div class="sublinks">
+                                    <ul class="links">
+                                        <li><a href="#">אודות המרכז הרפואי</a></li>
+                                        <li><a href="#">דבר המנכ"ל</a></li>
+                                        <li><a href="#">הוועד המנהל</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col_collapse">
+                                <h5 class="col_title font_r">שירותים רפואיים</h5>
+                                <div class="sublinks">
+                                    <ul class="links">
+                                        <li><a href="#">אודות המרכז הרפואי</a></li>
+                                        <li><a href="#">דבר המנכ"ל</a></li>
+                                        <li><a href="#">הוועד המנהל</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col_collapse">
+                                <h5 class="col_title font_r">מרכזים ומכונים</h5>
+                                <div class="sublinks">
+                                    <ul class="links">
+                                        <li><a href="#">אודות המרכז הרפואי</a></li>
+                                        <li><a href="#">דבר המנכ"ל</a></li>
+                                        <li><a href="#">הוועד המנהל</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col_collapse">
+                                <h5 class="col_title font_r">מידע למטופל</h5>
+                                <div class="sublinks">
+                                    <ul class="links">
+                                        <li><a href="#">שאלות נפוצות</a></li>
+                                        <li><a href="#">מאמרים / בלוגים</a></li>
+                                        <li><a href="#">טפסים</a></li>
+                                        <li><a href="#">גלרית וידאו</a></li>
+                                        <li><a href="#">סיפורי מטופלים</a></li>
+                                        <li><a href="#">תזונה</a></li>
+                                        <li><a href="#">ביטוחי בריאות</a></li>
+                                        <li><a href="#">ביטוחי קופות חולים</a></li>
+                                        <li><a href="#">דרכי הגעה</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom font_xs clear">
+                            <a href="#" title="רפאל - בתי חולים" class="logo"></a>
+
+                            <div class="copyright clear">
+                                <div>כל הזכויות שמורות לרפאל © 2019</div>
+                                <div class="d-ltr">Website by: <a href="https://www.tvuna.co.il" aria-label="Tvuna" class="logo_tvuna"></a></div>
+                            </div>
+
+                            <ul class="share_bar clear">
+                                <li><a href="#" aria-label="Facebook"><span class="icon icon-facebook"></span></a></li>
+                                <li><a href="#" aria-label="Linkedin"><span class="icon icon-linkedin"></span></a></li>
+                                <li><a href="#" aria-label="YouTube"><span class="icon icon-youtube"></span></a></li>
+                                <li class="link_text font_s"><a href="#">פרטיות</a></li>
+                                <li class="link_text font_s"><a href="#">תנאי האתר</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</main>
+</div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <!-- Popup wcag -->
+        <div class="popup_wcag content_popup box">
+            <a href="javascript:;" title="סגור" class="close_btn close close_lightbox" role="button"><span class="icon icon-close"></span></a>
+            <div class="scrollbar-inner">
+                <div class="inner">
+                    <div class="text">
+                        <h3 class="title_section">הצהרת נגישות</h3>
+                        <div class="text">
+                            <p><strong>גולש/ת יקר/ה!</strong></p>
+                            <p>ברוך הבא לאתר התוכן של רפאל בע"מ (להלן <strong>"החברה" </strong>או<strong> "רפאל"</strong>). אתר זה מיועד להנגיש בפניך את שירותי, אתרי ותכני החברה השונים, ולרכז עבורך את כל המידע הדרוש לשם העשרת תרבות האוכל, הבישול והפנאי, אספקת מוצרים ומתכונים, ומגוון טיפים והמלצות בנוגע לבישול, אפיה ותזונה.</p>
+                            <p>** מסמך זה מנוסח בלשון זכר מטעמי נוחות בלבד אך מתייחס לגברים ונשים כאחד. עמכן הסליחה.</p>
+                            <p>&nbsp;</p>
+                            <h3>שימושך באתר והסכמה לתנאיו ולתקנונים קשורים/נלווים</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script> var includeScriptsUrlPath = '~/media/js/plugins/'; </script>
+    <script src="~/media/js/plugins/plugins.min.js"></script>
+    <script src="~/media/js/plugins/mixel.plugins.js"></script>
+    <script src="~/media/js/global.js"></script>
+</body>
+</html>

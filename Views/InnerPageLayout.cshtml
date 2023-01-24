@@ -1,0 +1,126 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "Layout.cshtml";
+}
+
+<div class="medicalcenter_page template_container container_padding" id="medicalcenter_page" data-templatename="medical_center">
+	<section class="twocol_section page_head">
+		<div class="innerpage">
+			<div class="row">
+				@RenderBody()
+			</div>
+		</div>
+		<div id="sticky_end"></div>
+	</section>
+
+	<section class="posts_section experts_section" id="posts_section">
+		<div class="innerpage">
+			<div class="row">
+				<h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>אולי יעניין אותך גם</h2>
+                <div class="carousel sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
+                    <div class="item carousel-cell">
+                        <a href="#" class="inner" aria-label="עבור לרופא">
+                            <div class="in">
+                                <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/10.jpg');"></div></div>
+                                <div class="bottom">
+                                    <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                    <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item carousel-cell">
+                        <a href="#" class="inner" aria-label="עבור לרופא">
+                            <div class="in">
+                                <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/11.jpg');"></div></div>
+                                <div class="bottom">
+                                    <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                    <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item carousel-cell">
+                        <a href="#" class="inner" aria-label="עבור לרופא">
+                            <div class="in">
+                                <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/12.jpg');"></div></div>
+                                <div class="bottom">
+                                    <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                    <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn btn_outline"><span>לבלוג המלא</span></a></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="lead_section side_section" id="lead_section">
+                    <div class="innerpage">
+                        <div class="row">
+                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/13.jpg');"></div></div></div>
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>מעוניינים להתייעץ איתנו?</h2>
+                                        <p class="paragraph sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><strong class="font_xl">השאירו לנו פרטים ונחזור אליכם בקרוב</strong><br />השדות המסומנים בכוכבית, הנם שדות חובה.</p>
+                                        <form class="form_ui font_m clear sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_1" class="input_text" required />
+                                                    <label for="input_1" class="label">שם פרטי</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_2" class="input_text" required />
+                                                    <label for="input_2" class="label">שם משפחה</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_3" class="input_text" required />
+                                                    <label for="input_3" class="label">טלפון</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_4" class="input_text" required />
+                                                    <label for="input_4" class="label">דוא"ל</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c">
+                                                <select class="cselect" data-placeholder="נושא הפנייה">
+                                                    <option>נושא הפנייה</option>
+                                                    <option value="נושא 1">נושא 1</option>
+                                                    <option value="נושא 2">נושא 2</option>
+                                                    <option value="נושא 3">נושא 3</option>
+                                                    <option value="נושא 4">נושא 4</option>
+                                                    <option value="נושא 5">נושא 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_c">
+                                                <div class="input input_textarea">
+                                                    <textarea id="input_6" class="input_text" rows="1"></textarea>
+                                                    <label for="input_6" class="label">על מה תרצו לדבר איתנו</label>
+                                                </div>
+                                            </div>
+                                            <div class="sep"></div>
+                                            <div class="input_c">
+                                                <div class="checkbox font_r"><input type="checkbox" name="checkbox" /><label>אני מסכימ/ה להיות בקשר במייל או סמס</label></div>
+                                            </div>
+                                            <div class="input_submit input_c clear">
+                                                <button type="submit" class="btn"><span>שליחה</span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+</div>
+

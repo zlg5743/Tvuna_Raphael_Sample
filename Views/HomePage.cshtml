@@ -1,0 +1,319 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Layout.cshtml";
+}
+
+<div class="home_page template_container" id="home_page" data-templatename="home">
+                
+                <!-- Home top -->
+                <section class="home_top page_head" id="home_top">
+                    <div class="right_side">
+                        <div class="innerpage">
+                            <div class="row">
+                                <h1 class="title_section title-1 parallax sm-splittext" data-translatey="0.3" data-ease="0.07"><div class="parallax-move">ברוכים הבאים לבית החולים רפאל</div></h1>
+                                <div class="how_help">
+                                    <h3 class="title title-4"><div>איך נוכל לעזור?</div></h3>
+                                    <div class="ul_cont">
+                                        <ul class="clear">
+                                            <li><a href="javascript:;" aria-label="לזמן תור" class="inner hover_highlight open_lightbox btn_openinvit" data-lightbox="popup_invitation"><div class="image"><img src="media/images/iconh_1.png" alt="" /></div><div class="desc high"><div><span>לזמן תור</span></div></div></a></li>
+                                            <li><a href="#" aria-label="רופאים מומחים" class="inner hover_highlight"><div class="image"><img src="media/images/iconh_2.png" alt="" /></div><div class="desc high"><div><span>רופאים</span></div><br /><div><span>מומחים</span></div></div></a></li>
+                                            <li><a href="#" aria-label="ניתוחים" class="inner hover_highlight"><div class="image"><img src="media/images/iconh_3.png" alt="" /></div><div class="desc high"><div><span>ניתוחים</span></div></div></a></li>
+                                            <li><a href="#" aria-label="מרכזים ומכונים" class="inner hover_highlight"><div class="image"><img src="media/images/iconh_4.png" alt="" /></div><div class="desc high"><div><span>מרכזים</span></div><div><span>ומכונים</span></div></div></a></li>
+                                            <li><a href="#" aria-label="טפסים להורדה" class="inner hover_highlight"><div class="image"><img src="media/images/iconh_5.png" alt="" /></div><div class="desc high"><div><span>טפסים</span></div><br /><div><span>להורדה</span></div></div></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_slider mix_slider" data-timeout="7500">
+                        <div class="wrapper parallax" data-translatey="0.5" data-ease="0.09">
+                            <div class="wrapper_in parallax-move">
+                                <div class="item"><div class="bg cover" style="background-image:url('media/images/pictures/1.jpg');"></div></div>
+                                <div class="item"><div class="bg cover" style="background-image:url('media/images/pictures/81.jpg');"></div></div>
+                                <div class="item"><div class="bg cover" style="background-image:url('media/images/pictures/82.jpg');"></div></div>
+                            </div>
+                        </div>
+                        <div class="innerpage">
+                            <div class="row">
+                                <div class="box">
+                                    <div class="inner">
+                                        <div class="texts">
+                                            <a href="#link_1" class="text">טכנולוגיה וחדשנות רפואית במיוחד בשבילך</a>
+                                            <a href="#link_2" class="text">קבלת שירות באמצעים הטכנולוגים המתקדמים בעולם</a>
+                                            <a href="#link_3" class="text">מיטב המומחים כאן בשבילכם</a>
+                                        </div>
+                                        <a href="#link_1" class="btn_arrow white"><span class="icon icon-arrow_left"></span></a>
+                                        <div class="dots">
+                                            <div class="fill"></div>
+                                            <ul>
+                                                <li><a href="javascript:;" class="dot" aria-label="עבור לשקופית 1"></a></li>
+                                                <li><a href="javascript:;" class="dot" aria-label="עבור לשקופית 2"></a></li>
+                                                <li><a href="javascript:;" class="dot" aria-label="עבור לשקופית 3"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Main content -->
+                <a href="javascript:;" id="maincontent" tabindex="-1" class="skip_content_link"></a>
+
+                <!-- Side section -->
+                <section class="side_section align_right">
+                    <div class="innerpage">
+                        <div class="row">
+                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/2.jpg');"></div></div></div>
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>שיא הטכנולוגיה ברפואה</h2>
+                                        <p class="paragraph font_l sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>קבלת שירות באמצעים הטכנולוגים המתקדמים בעולם, אתם מוזמנים לבחור את המכון המתאים לכם:</p>
+                                        <ul class="two_col_links sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
+                                            <li><a href="#"><span class="text">המרכז הבריאטרי</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">מכון דופלר</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">מכון שמיעה</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">המרכז הבריאטרי</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">מכור דופלר</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">המרכז הבריאטרי</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">מכון דופלר</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">מכון שמיעה</span><span class="icon icon-chev_left"></span></a></li>
+                                            <li><a href="#"><span class="text">המרכז הבריאטרי</span><span class="icon icon-chev_left"></span></a></li>
+                                        </ul>
+                                        <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn"><span>לכל המרכזים והמכונים</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Side section -->
+                <section class="side_section bg_grayblue">
+                    <div class="innerpage">
+                        <div class="row">
+                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/3.jpg');"></div></div></div>
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>שירותי רפואה מובילים</h2>
+                                        <p class="paragraph font_l sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>המחלקה לשירותים רפואיים במחוז השיקום היא הגוף המטפל בכל הפניות הנוגעות לטיפול הרפואי.  צוות המחלקה לשירותים רפואיים במחוז השיקום כולל רופאים מחוזיים, מנהל/ת מרפאה ועובדי שירותים רפואיים.<br /><br />ישנה ​קבלת קהל פתוחה במחוז, במהלכה ניתן להיפגש עם עובדי השירותים הרפואיים, ללא תיאום מראש. על מנת להיפגש עם הרופא המחוזי יש לקבוע פגישה מראש, באמצעות פנייה לעובד השירותים הרפואיים במחוז.</p>
+                                        <div class="links_cont sm-global sm-linksreveal" data-smprop='{"type":"class","threshold":0.1}'>
+                                            <ul class="one two_col_links">
+                                                <li class="li-title"><h4 class="title font_l">שירותים מובילים</h4></li>
+                                                <li><a href="#"><span class="text">מערך ההרדמה</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">מערך כירורגי</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">מרפאת כלי דם</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">ועדה להפסקת הריון</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">ביופסיה של הערמונית</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">דיקור מי שפיר וצי’פ גנטי</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">היחידה לריסוק אבנים בכליות</span><span class="icon icon-chev_left"></span></a></li>
+                                                <li><a href="#"><span class="text">מחלקות אשפוז</span><span class="icon icon-chev_left"></span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn"><span>לכל שירותי הרפואה שלנו</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experts section -->
+                <section class="experts_section" id="experts_section">
+                    <div class="innerpage">
+                        <div class="row">
+                            <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>מיטב המומחים כאן בשבילכם</h2>
+                            <div class="carousel sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}' data-flickity='{ "cellAlign": "right", "contain": true, "rightToLeft" : true, "pageDots" : false, "prevNextButtons" : false, "watchCSS" : true }'>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner hover_highlight" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/4.jpg');"></div></div>
+                                            <div class="bottom font_l">
+                                                <h3 class="title font_l high"><div><span>ד״ר רוגובסקי שני</span></div></h3>
+                                                <div class="desc high"><div><span>התמחות</span></div></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner hover_highlight" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/5.jpg');"></div></div>
+                                            <div class="bottom font_l">
+                                                <h3 class="title font_l high"><div><span>ד״ר רוגובסקי שני</span></div></h3>
+                                                <div class="desc high"><div><span>התמחות</span></div></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner hover_highlight" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/6.jpg');"></div></div>
+                                            <div class="bottom font_l">
+                                                <h3 class="title font_l high"><div><span>ד״ר רוגובסקי שני</span></div></h3>
+                                                <div class="desc high"><div><span>התמחות</span></div></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner hover_highlight" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/7.jpg');"></div></div>
+                                            <div class="bottom font_l">
+                                                <h3 class="title font_l high"><div><span>ד״ר רוגובסקי שני</span></div></h3>
+                                                <div class="desc high"><div><span>התמחות</span></div></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner hover_highlight" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/8.jpg');"></div></div>
+                                            <div class="bottom font_l">
+                                                <h3 class="title font_l high"><div><span>ד״ר רוגובסקי שני</span></div></h3>
+                                                <div class="desc high"><div><span>התמחות</span></div></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn"><span>לכל המומחים שלנו</span></a></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cover section -->
+                <section class="cover_section">
+                    <div class="bg parallax" data-translatey="0.5" data-scale="1,1.35" data-ease="0.09"><div class="cover parallax-move" style="background-image: url('media/images/pictures/9.jpg');"></div></div>
+                    <div class="innerpage">
+                        <div class="table">
+                            <div class="table-cell">
+                                <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>רפאל המרכז הרפואי החדש</h2>
+                                <p class="paragraph font_xl sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>בית חולים מרב מעניק שרות למטופליו באמצעות קופות החולים, חברות הביטוח , תיירות מרפא ובאופן ישיר.</p>
+                                <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn"><span>הצצה למרכז</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Posts section -->
+                <section class="posts_section experts_section" id="posts_section">
+                    <div class="innerpage">
+                        <div class="row">
+                            <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>תמיד עם האצבע על הדופק</h2>
+                            <div class="carousel sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/10.jpg');"></div></div>
+                                            <div class="bottom">
+                                                <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                                <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/11.jpg');"></div></div>
+                                            <div class="bottom">
+                                                <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                                <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item carousel-cell">
+                                    <a href="#" class="inner" aria-label="עבור לרופא">
+                                        <div class="in">
+                                            <div class="bg"><div class="cover" style="background-image: url('media/images/pictures/12.jpg');"></div></div>
+                                            <div class="bottom">
+                                                <h3 class="title title-5">רפאל המרכז הרפואי החדש</h3>
+                                                <div class="desc">פיתוח היכולת להכיר את דפוסי ההכרה ולהשקיט אותה; לחדד את יכולת החשיבה הבהירה ולחוות נוכחות, יצירתיות ונינוחות בתוך העשייה.</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="btn_cont sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><a href="#" class="btn"><span>לבלוג המלא</span></a></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lead section -->
+                <section class="lead_section side_section">
+                    <div class="innerpage">
+                        <div class="row">
+                            <div class="image sm-global sm-imagereveal parallax" data-smprop='{"type":"class","threshold":0.15}' data-translatey="0.35" data-ease="0.09"><div class="bg parallax-move"><div class="cover" style="background-image:url('media/images/pictures/13.jpg');"></div></div></div>
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <h2 class="title_section title-2 sm-global sm-splittext" data-smprop='{"type":"split","threshold":0.02}'>מעוניינים להתייעץ איתנו?</h2>
+                                        <p class="paragraph sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'><strong class="font_xl">השאירו לנו פרטים ונחזור אליכם בקרוב</strong><br />השדות המסומנים בכוכבית, הנם שדות חובה.</p>
+                                        <form class="form_ui font_m clear sm-global sm-fadein" data-smprop='{"type":"class","threshold":0.1}'>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_1" class="input_text" required />
+                                                    <label for="input_1" class="label">שם פרטי</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_2" class="input_text" required />
+                                                    <label for="input_2" class="label">שם משפחה</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_3" class="input_text" required />
+                                                    <label for="input_3" class="label">טלפון</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c must">
+                                                <div class="input">
+                                                    <input type="text" id="input_4" class="input_text" required />
+                                                    <label for="input_4" class="label">דוא"ל</label>
+                                                </div>
+                                            </div>
+                                            <div class="input_c">
+                                                <select class="cselect" data-placeholder="נושא הפנייה">
+                                                    <option>נושא הפנייה</option>
+                                                    <option value="נושא 1">נושא 1</option>
+                                                    <option value="נושא 2">נושא 2</option>
+                                                    <option value="נושא 3">נושא 3</option>
+                                                    <option value="נושא 4">נושא 4</option>
+                                                    <option value="נושא 5">נושא 5</option>
+                                                </select>
+                                            </div>
+                                            <div class="input_c">
+                                                <div class="input input_textarea">
+                                                    <textarea id="input_6" class="input_text" rows="1"></textarea>
+                                                    <label for="input_6" class="label">על מה תרצו לדבר איתנו</label>
+                                                </div>
+                                            </div>
+                                            <div class="sep"></div>
+                                            <div class="input_c">
+                                                <div class="checkbox font_r"><input type="checkbox" name="checkbox" /><label>אני מסכימ/ה להיות בקשר במייל או סמס</label></div>
+                                            </div>
+                                            <div class="input_submit input_c clear">
+                                                <button type="submit" class="btn"><span>שליחה</span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
