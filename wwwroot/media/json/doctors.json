@@ -1,0 +1,28 @@
+{ 
+    "doctors":[ 
+       { 
+          "url":"test_1.html",
+          "image":"media/images/pictures/28.jpg",
+          "name": "דוקטור רוגובסקי שני",
+          "expertise": "התמחקות"
+       },
+       { 
+        "url":"test_2.html",
+        "image":"media/images/pictures/27.jpg",
+        "name": "דוקטור רוגובסקי שני",
+        "expertise": "התמחקות"
+        },
+        { 
+            "url":"test_1.html",
+            "image":"media/images/pictures/28.jpg",
+            "name": "דוקטור רוגובסקי שני",
+            "expertise": "התמחקות"
+         },
+         { 
+          "url":"test_2.html",
+          "image":"media/images/pictures/27.jpg",
+          "name": "דוקטור רוגובסקי שני",
+          "expertise": "התמחקות"
+          }
+    ]
+ }
